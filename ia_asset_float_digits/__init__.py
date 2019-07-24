@@ -1,1 +1,1 @@
-from .import asset_type
+from .import models
