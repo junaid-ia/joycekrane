@@ -1,0 +1,4 @@
+[submodule "OCA/server-ux/mass_editing"]
+	path = OCA/server-ux/mass_editing
+	url = git@github.com:OCA/server-ux.git
+	branch = 12.0
