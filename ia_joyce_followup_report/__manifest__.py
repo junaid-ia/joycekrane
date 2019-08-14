@@ -2,7 +2,7 @@
 
 {
     'name': 'I&A Joyce Followup Report',
-    'version': '1.0',
+    'version': '1.1',
     'category': 'Accounting',
     'summary':  'I&A Joyce Followup Report',
 
@@ -15,6 +15,7 @@
         'account_reports'
         ],
     'data': [
+        'views/report_followup.xml',
      ],
     'demo': [
     ],
