@@ -78,10 +78,10 @@ class AccountFollowupReport(models.AbstractModel):
                 #aml.invoice_id.x_studio_epos_invoice_id, #ia change 8aug2019
                 #aml.invoice_id.x_studio_customer_po, #ia change 8aug2019
                 columns = [
-                    aml.invoice_id.number,
+                    aml.invoice_id.x_studio_epos_invoice_id,  #ia change 8aug2019
                     format_date(self.env, aml.date, lang_code=lang_code),
                     date_due,
-                    aml.invoice_id.number,
+                    aml.invoice_id.x_studio_customer_po,  #ia change 8aug2019
                     aml.invoice_id.origin,
                     move_line_name,
                     expected_pay_date + ' ' + (aml.internal_note or ''),
