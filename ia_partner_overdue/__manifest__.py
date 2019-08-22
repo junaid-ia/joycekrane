@@ -1,0 +1,22 @@
+{
+    'name': 'Partner Overdue',
+    'version': '12.0.11.0.1.0',
+
+    'description': u"""
+
+
+
+""",
+    'author': 'Ioppolo & Associates',
+    'depends':
+        [
+        'account',
+        'base',
+        ],
+    'data':
+        [
+        'views/ia_partner_overdue_view.xml',
+        ],
+    'installable': True,
+    'license': 'OPL-1',
+}
