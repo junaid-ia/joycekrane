@@ -9,9 +9,9 @@
 """,
     'author': 'Ioppolo & Associates',
     'depends':
-        [
+        ['base',
         'account',
-        'base',
+
         ],
     'data':
         [
