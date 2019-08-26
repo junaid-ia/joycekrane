@@ -31,8 +31,8 @@ class PartnerOverdue(models.Model):
             lis.sort(key=int)
             if len(lis) != 0:
                 a = lis[-1]
-                record.overdue = a
-                record.update({'overdue': a})
+                record.over_due_compute = a
+                record.update({'over_due_compute': a})
 
 
 
