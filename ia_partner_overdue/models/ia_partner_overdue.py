@@ -6,7 +6,7 @@ class PartnerOverdue(models.Model):
    # _name = 'res.partner'
     _inherit = 'res.partner'
 
-    over_due_compute = fields.Char("Overdue Days",compute="cal_field",store=True)
+    over_due_compute = fields.Float("Overdue Days",compute="cal_field",store=True)
 
 
 
