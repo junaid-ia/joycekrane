@@ -7,7 +7,8 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <field name="vat" position="after">
-                    <field name="over_due_compute"/>
+                    <field name="over_due_compute" invisible="1"/>
+                    <field name="over_due_compute1"/>
                 </field>
             </field>
         </record>
