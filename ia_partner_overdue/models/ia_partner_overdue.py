@@ -6,9 +6,13 @@ class PartnerOverdue(models.Model):
    # _name = 'res.partner'
     _inherit = 'res.partner'
 
-    over_due_compute = fields.Float("Overdue Days",compute="cal_field",store=True)
+    over_due_compute = fields.Float("Overdue Days",compute="cal_field")
+    over_due_compute1 = fields.Float("Overdue Days", related="over_due_compute",store=True)
 
-
+    @api.depends('over_due_compute')
+    def _compute_fieldvalue(self):
+        for each in self:
+            each.over_due_compute1 = each.over_due_compute
 
     def cal_field(self):
         for record in self:
